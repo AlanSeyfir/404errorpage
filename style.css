@@ -66,6 +66,63 @@ button:hover{
     transition: 0.3s ease-in;
 }
 
+@media only screen and (max-width:620px){
+    .all-information{
+        all: initial;
+        
+    }
+
+    img{
+        all: initial;
+        position: absolute;
+        float: none;
+        width: 90%;
+        top: 0;
+        bottom: 0;
+        left: 40px;
+        right: 10px;
+        margin-top: 70px;                
+        margin-bottom: 30px;
+    }
+
+    .information-container{
+        all: initial;
+        position: absolute;
+        float: top;
+    }
+
+    h2{
+        font-size: 48px;
+        padding-top: 400px;
+        margin-right: 0px;
+        padding-left: 50px;
+        bottom: 100px;
+        font-family: 'Space Mono', monospace;
+        line-height: 71px;
+    }
+
+    p{
+        /*position: absolute;*/
+        text-align: unset;
+        padding: 0px 0px 0px 50px;
+        font-family: 'Space Mono', monospace;
+    }
+
+    button{
+        margin-left: 50px;
+    }
+
+    footer{
+        all: initial;
+        position: absolute;
+        height: 17px;
+        left: 27%;
+        top: 990px;
+    }
+}
+
+
+
 /*I want to try the animation with thw button that ease in and out
 BUT the hover button abruptly change to the original color*/
 button::after{
@@ -79,11 +136,14 @@ button:hover:after{
 
 /*Lmao this didn't work*/
 
+/*Change the position*/
 footer{
     margin: 20px;
-    position: absolute;
-    bottom: 30px;
-    left: 40%;
+    padding-top: 70px;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Montserrat', sans-serif;
 }
 
